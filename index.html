@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.umd.js"></script>
+    
+    <title>Movimiento Rectilineo Uniformemente Acelereado</title>
+</head>
+<header>
+    <h1>MRUA</h1>
+    <nav>
+        <ul>
+           tellez de la cruz esaul
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div id="main">
+
+    <div id="body">
+        
+        
+        
+        <div id="vi">
+            <button id="botonvi" >Velocidad Inicial</button>
+            <div id="contenidovi" style="display:none">
+                
+                
+                <h1 id="bvi">Hola para encontrar la vi deberas tener alguno de los siguientes datos, escoje la opción que tengas 
+                    <button id="vfa" >vf y a</button>
+                    <div id="contenidovfa" style="display:none">
+                        <label >vf:</label>
+                        <input type="" id="vfa-vf" name="numero1" min="0" max="100">
+                        
+                        <label >a:</label>
+                        <input type="" id="vfa-a" name="numero2" min="0" max="100">
+                        
+                        <label ">t:</label>
+                        <input type="" id="vfa-t" name="numero2" min="0" max="100">
+                        
+                        <div >
+                            <button onclick="resultadovivfa()">Calcular:</button>
+                            <p id="resultadovi-vfa">El resultado es:</p>
+                        </div>
+                    </div>
+                    <button id="vfd" >vf y d</button>
+                    <div id="contenidovfd" style="display:none">
+                        <label for="">vf:</label>
+                        <input type="" id="vfd-vf" name="numero1" min="0" max="100">
+                        
+                        <label for="">d:</label>
+                        <input type="" id="vfd-d" name="numero2" min="0" max="100">
+                        
+                        <label for="">t:</label>
+                        <input type="" id="vfd-t" name="numero2" min="0" max="100">
+                        
+                        <div >
+                            <button onclick="resultadovivfd()">Calcular:</button>
+                            <p id="resultadovi-vfd">El resultado es:</p>
+                        </div>
+                    </div>
+                    
+                </h1>
+            
+                
+            </div>
+        </div>
+        
+        
+        <div id="vf">
+            <button id="botonvf" >Velocidad Final</button>
+            <div id="contenidovf" style="display:none">
+                
+                
+                <h1 id="bvf">Hola para encontrar la vf deberas tener alguno de los siguientes datos, escoje la opción que tengas 
+                    <button id="via" >vi y a</button>
+                    <div id="contenidovia" style="display:none">
+                        <label for="">vi:</label>
+                        <input type="" id="via-vi" name="numero1" min="0" max="100">
+                        
+                        <label for="">a:</label>
+                        <input type="" id="via-a" name="numero2" min="0" max="100">
+                        
+                        <label for="">t:</label>
+                        <input type="" id="via-t" name="numero2" min="0" max="100">
+                        
+                        <div >
+                            <button onclick="resultadovfvia()">Calcular:</button>
+                            <p id="resultadovf-via">El resultado es:</p>
+                        </div>
+                    </div>
+                    
+                    <button id="vid" >vi y d</button>
+                    <div id="contenidovid" style="display:none">
+                        <label >vi:</label>
+                        <input type="" id="vid-vi" name="numero1" min="0" max="100">
+                        
+                        <label >d:</label>
+                        <input type="" id="vid-d" name="numero2" min="0" max="100">
+                        
+                        <label >t:</label>
+                        <input type="" id="vid-t" name="numero2" min="0" max="100">
+                    
+                        <div >
+                            <button onclick="resultadovfvid()">Calcular:</button>
+                            <p id="resultadovf-vid">El resultado es:</p>
+                        </div>
+                    </div>
+                    
+                </h1>
+                
+                
+            </div>
+        </div>
+        
+        
+        
+        <div id="dis">
+            <button id="botondis" >Distancia</button>
+            <div id="contenidodis" style="display:none">
+                
+                
+                <h1 id="bdis">Hola para encontrar la distancia deberas tener alguno de los siguientes datos, escoje la opción que tengas 
+                    <button id="via2" >vi y a</button>
+                    <div id="contenidovia2" style="display:none">
+                        <label for="">vi:</label>
+                        <input type="" id="via2-vi" name="numero1" min="0" max="100">
+                        
+                        <label for="">a:</label>
+                        <input type="" id="via2-a" name="numero2" min="0" max="100">
+                        
+                        <label for="">t:</label>
+                        <input type="" id="via2-t" name="numero2" min="0" max="100">
+                        
+                        <div >
+                            <button onclick="resultadodisvia2()">Calcular:</button>
+                            <p id="resultadodis-via2">El resultado es:</p>
+                        </div>
+                    </div>
+                    
+                    <button id="vivf" >vi y vf</button>
+                    <div id="contenidovivf" style="display:none">
+                        <label for="">vi:</label>
+                        <input type="" id="vivf-vi" name="numero1" min="0" max="100">
+                        
+                        <label for="">vf:</label>
+                        <input type="" id="vivf-vf" name="numero2" min="0" max="100">
+                        
+                        <label for="">t:</label>
+                        <input type="" id="vivf-t" name="numero2" min="0" max="100">
+                        
+                        <div >
+                            <button onclick="resultadodisvivf()">Calcular:</button>
+                            <p id="resultadodis-vivf">El resultado es:</p>
+                        </div>
+                    </div>
+                    
+                    <button id="vfa2" >vf y a</button>
+                    <div id="contenidovfa2" style="display:none">
+                        <label for="">vf:</label>
+                        <input type="" id="vfa2-vf" name="numero1" min="0" max="100">
+                        
+                        <label for="">a:</label>
+                        <input type="" id="vfa2-a" name="numero2" min="0" max="100">
+                        
+                        <label for="">t:</label>
+                        <input type="" id="vfa2-t" name="numero2" min="0" max="100">
+                        
+                        <div >
+                            <button onclick="resultadodisvfa2()">Calcular:</button>
+                            <p id="resultadodis-vfa2">El resultado es:</p>
+                        </div>
+                    </div>
+                    
+                    
+                </h1>
+                
+                
+            </div>
+        </div>
+        
+        
+        
+        <div id="ace">
+            <button id="botonace" >Aceleracion</button>
+            <div id="contenidoace" style="display:none">
+                
+                
+                <h1 id="bace">Hola para encontrar la aceleracion deberas tener alguno de los siguientes datos, escoje la opción que tengas 
+                    <button id="vivf2" >vi y vf</button>
+                    <div id="contenidovivf2" style="display:none">
+                        <label for="">vi:</label>
+                        <input  id="vivf2-vi" name="numero1" min="0" max="100">
+                        
+                        <label for="">vf:</label>
+                        <input  id="vivf2-vf" name="numero2" min="0" max="100">
+                        
+                        <label for="">t:</label>
+                        <input  id="vivf2-t" name="numero2" min="0" max="100">
+                        
+                        <div >
+                            <button onclick="resultadoacevivf2()">Calcular:</button>
+                            <span id="resultadoace-vivf2">El resultado es:</span>
+                        </div>
+                    </div>
+                    
+                    <button id="vid2" >vi y d</button>
+                    <div id="contenidovid2" style="display:none">
+                        <label >vi:</label>
+                        <input type="" id="vid2-vi" name="numero1" min="0" max="100">
+                    
+                        <label for="">d:</label>
+                        <input type="" id="vid2-d" name="numero2" min="0" max="100">
+                        
+                        <label for="">t:</label>
+                        <input type="" id="vid2-t" name="numero2" min="0" max="100">
+                        
+                        
+                        <button onclick="resultadoacevid2()">Calcular:</button>
+                        <p id="resultadoace-vid2">El resultado es: </p>
+                        
+                    </div>
+                    
+                    <button id="vfd2" >vf y d</button>
+                    <div id="contenidovfd2" style="display:none">
+                        <label for="">vf:</label>
+                        <input type="" id="vfd2-vf" name="numero1" min="0" max="100">
+                        
+                        <label for="">d:</label>
+                        <input type="" id="vfd2-d" name="numero2" min="0" max="100">
+                        
+                        <label for="">t:</label>
+                        <input type="" id="vfd2-t" name="numero2" min="0" max="100">
+                        
+                        
+                        <button onclick="resultadoacevfd2()">Calcular:</button>
+                        <p id="resultadoace-vfd2">El resultado es:</p>
+                        
+                        
+                    </div>
+                    
+                </h1>
+                
+                
+            </div>
+        </div>
+           
+        
+        
+        
+        
+        
+    </div>
+    <div id="body2">
+        <canvas id="myChart4" " ></canvas> 
+        <canvas id="myChart3" " ></canvas>   
+        <canvas id="myChart2" " ></canvas>   
+        <canvas id="myChart" " ></canvas>
+        
+        
+    </div>
+    <div id="body3">
+        <div>
+        <h1>Una vez teniendo los resultados de tus variables, anotalas debajo para graficar la posición de la particula</h1>
+       </div>
+       <div id="hola">
+        
+        <label for="">Posición Inicial</label>
+        <input type="" id="xo" name="numero1" min="0" max="100" height="15px">
+
+        <label for="">Velocidad Inicial</label>
+        <input type="" id="vo" name="numero1" min="0" max="100">
+
+        <label for="">Tiempo</label>
+        <input type="" id="t" name="numero1" min="0" max="100">
+
+        <label for="">Aceleracion</label>
+        <input type="" id="a" name="numero1" min="0" max="100">
+
+        <button onclick="mostrarposicion()">Calcular:</button>
+
+        <p id="resultadoxo">xo es :</p>
+        <canvas id="myChart5"></canvas>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./index.js"></script>
+<script src="./grafica.js"></script>
+
+</html>

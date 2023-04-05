@@ -1,0 +1,90 @@
+html{
+    border: none;
+    padding: 0;
+    font-family: 'Pacifico', Courier, monospace;
+    
+}
+#body{
+    display: flex;
+    justify-content:space-around;
+    font-size: 7px;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+  } 
+  h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+  }
+  
+  nav li {
+    margin-right: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .hidden {
+    display: none;
+  }
+  button{
+    border-radius: 10px;
+    width: 50;
+    border: none;
+    background-color: rgb(112, 234, 193);
+  }
+ #bvi,#bvf,#bdis,#bace{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+ }
+ #vi,#vf,#dis,#ace{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+ }
+ canvas {
+  width: 400px;
+  height: 300px;
+}
+#main{
+  display: flex;
+  flex-direction: column;
+
+}
+#body2{
+  width: 400px;
+  height: 500px;
+  display: flex;
+  
+}
+#body3{
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  flex-direction: column;
+  
+  height: 500px;
+  
+}
+button:hover{
+  background-color:aquamarine ;
+}
+#hola{
+  font-size: 15px;
+}
